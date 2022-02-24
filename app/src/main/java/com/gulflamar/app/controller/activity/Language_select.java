@@ -46,7 +46,7 @@ private ActivityLanguageSelectBinding binding;
 //                context = LocaleHelper.setLocale(Language_select.this, "en");
 //                resources = context.getResources();
 
-                Intent intent =new Intent(Language_select.this,Dashboard.class);
+                Intent intent =new Intent(Language_select.this,OnBoardScreen.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
@@ -67,7 +67,7 @@ private ActivityLanguageSelectBinding binding;
                 recreate();
 //                context = LocaleHelper.setLocale(Language_select.this, "ar");
 //                resources = context.getResources();
-                Intent intent =new Intent(Language_select.this,Dashboard.class);
+                Intent intent =new Intent(Language_select.this,OnBoardScreen.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }

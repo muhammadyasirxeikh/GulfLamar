@@ -19,7 +19,18 @@
             app:exitAnim="@anim/fade_out"
             app:popExitAnim="@anim/slide_down"
             />
-
+        <action
+            android:id="@+id/action_homeFragment_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_homeFragment_to_add_Site"
+            app:destination="@id/add_Site" />
+        <action
+            android:id="@+id/action_homeFragment_to_bookings"
+            app:destination="@id/bookings" />
+        <action
+            android:id="@+id/action_homeFragment_to_wallet"
+            app:destination="@id/wallet" />
 
 
     </fragment>
@@ -42,6 +53,18 @@
         tools:layout="@layout/fragment_plan_selection" >
 
 
+        <action
+            android:id="@+id/action_plan_selection_to_invoice_Fragment"
+            app:destination="@id/invoice_Fragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:popExitAnim="@anim/slide_down"/>
+        <action
+            android:id="@+id/action_plan_selection_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_down"
+            app:exitAnim="@anim/fade_out"
+            />
     </fragment>
     <fragment
         android:id="@+id/profile"
@@ -59,16 +82,61 @@
             app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_profile_to_booking"
-            app:destination="@id/bookings"
+            app:destination="@id/bookings"/>
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"/>-->
+
+        <action
+            android:id="@+id/action_profile_to_addsite"
+            app:destination="@id/add_Site"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profile_to_notification"
+            app:destination="@id/notification_nav" />
+        <action
+            android:id="@+id/action_profile_to_wallet"
+            app:destination="@id/wallet" />
     </fragment>
     <fragment
         android:id="@+id/bookings"
         android:name="com.gulflamar.app.controller.fragment.bookings.Bookings"
         android:label="fragment_bookings"
         tools:layout="@layout/fragment_bookings" />
+    <fragment
+        android:id="@+id/add_Site"
+        android:name="com.gulflamar.app.controller.fragment.addsite.Add_Site"
+        android:label="fragment_add__site"
+        tools:layout="@layout/fragment_add__site" >
+        <action
+            android:id="@+id/action_add_Site_to_invoice_Fragment"
+            app:destination="@id/invoice_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification_nav"
+        android:name="com.gulflamar.app.controller.fragment.notification.Notification"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/wallet"
+        android:name="com.gulflamar.app.controller.fragment.wallet.Wallet"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/invoice_Fragment"
+        android:name="com.gulflamar.app.controller.fragment.Invoices.Invoice_Fragment"
+        android:label="fragment_invoice"
+        tools:layout="@layout/fragment_invoice" >
+        <action
+            android:id="@+id/action_invoice_Fragment_to_add_Site"
+            app:destination="@id/add_Site" />
+        <action
+            android:id="@+id/action_invoice_Fragment_to_plan_selection"
+            app:destination="@id/plan_selection" />
+    </fragment>
 
 </navigation>

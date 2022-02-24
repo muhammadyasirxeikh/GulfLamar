@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import com.gulflamar.app.R;
+import com.gulflamar.app.controller.activity.Dashboard;
 import com.gulflamar.app.databinding.FragmentEditProfileBinding;
 import com.gulflamar.app.databinding.FragmentHomeBinding;
 
@@ -25,6 +26,10 @@ public class EditProfile extends Fragment {
 //set the spinners adapter to the previously created one.
         binding.languageSpinner.setAdapter(adapter);
 
+        Dashboard.hideNav(true);
+
         return binding.getRoot();
     }
+
+
 }

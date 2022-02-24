@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.gulflamar.app.R;
+import com.gulflamar.app.controller.activity.Dashboard;
 import com.gulflamar.app.controller.adapter.BookingAdopter;
 import com.gulflamar.app.databinding.FragmentBookingsBinding;
 import com.gulflamar.app.databinding.FragmentHomeBinding;
@@ -28,7 +29,7 @@ public class Bookings extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentBookingsBinding.inflate(inflater, container, false);
-
+        Dashboard.hideNav(true);
 
 
         return binding.getRoot();
