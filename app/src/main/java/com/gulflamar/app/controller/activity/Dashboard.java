@@ -53,9 +53,8 @@ public class Dashboard extends AppCompatActivity {
             mNavController = navHostFragment.getNavController();
         }
 
-//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
 
-                navOptions = new NavOptions.Builder()
+        navOptions = new NavOptions.Builder()
                 .setLaunchSingleTop(true)
                 .setPopUpTo(mNavController.getGraph().getStartDestination(), false)
                 .setEnterAnim(R.anim.slide_in_right)
@@ -63,55 +62,45 @@ public class Dashboard extends AppCompatActivity {
                 .setPopEnterAnim(R.anim.slide_in_right)
                 .setPopExitAnim(R.anim.slide_out_left)
                 .build();
-//        NavHostFragment finalHost = NavHostFragment.create(R.navigation.nav_graph);
-//        getSupportFragmentManager().beginTransaction()
-//                .replace(R.id.nav_host_fragment, finalHost)
-//                .setPrimaryNavigationFragment(finalHost) // equivalent to app:defaultNavHost="true"
-//                .commit();
-
-
 
 
         binding.bottomNavBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
             @Override
             public void onItemSelected(int i) {
-                Fragment fragment = null;
+
                 switch (i) {
                     case R.id.nav_home:
-//                        fragment = new Home();
+
                         mNavController.navigate(R.id.homeFragment, null, navOptions);
                         break;
                     case R.id.nav_profile:
-                      //  Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_profile);
+
                         mNavController.navigate(R.id.profile, null, navOptions);
-//                       fragment = new Profile();
+
                         break;
                     case R.id.nav_notification:
-                     //   Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_add_Site);
-//                       fragment = new Add_Site();
+
                         mNavController.navigate(R.id.notification_nav, null, navOptions);
 
                         break;
 
                     case R.id.nav_wallet:
-                 //       Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_bookings);
+
                         mNavController.navigate(R.id.wallet, null, navOptions);
-//                        fragment = new Bookings();
+
                         break;
                 }
-//                getSupportFragmentManager().beginTransaction()
-//                        .replace(R.id.nav_host_fragment,
-//                                fragment).commit();
+
             }
         });
 
 
     }
 
-    public static void hideNav(boolean hideStatus){
+    public static void hideNav(boolean hideStatus) {
         if (hideStatus) {
             binding.bottomNavBar.setVisibility(View.GONE);
-        }else {
+        } else {
             binding.bottomNavBar.setVisibility(View.VISIBLE);
 
         }
