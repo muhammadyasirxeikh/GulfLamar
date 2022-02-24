@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+
+    app:startDestination="@id/homeFragment">
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gulflamar.app.controller.fragment.home.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_planselection"
+            app:destination="@id/plan_selection"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out"
+            app:popExitAnim="@anim/slide_down"
+            />
+
+
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.gulflamar.app.controller.fragment.editprofile.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/plan_selection"
+        android:name="com.gulflamar.app.controller.fragment.planSlectionScreen.Plan_selection"
+        android:label="fragment_plan_selection"
+        tools:layout="@layout/fragment_plan_selection" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.gulflamar.app.controller.fragment.profile.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+
+
+        <action
+            android:id="@+id/action_profile_to_editprofile"
+            app:destination="@id/editProfile"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_profile_to_booking"
+            app:destination="@id/bookings"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/bookings"
+        android:name="com.gulflamar.app.controller.fragment.bookings.Bookings"
+        android:label="fragment_bookings"
+        tools:layout="@layout/fragment_bookings" />
+
+</navigation>

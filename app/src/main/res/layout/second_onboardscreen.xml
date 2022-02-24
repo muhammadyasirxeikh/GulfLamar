@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".controller.activity.Second_onboardscreen">
+
+    <TextView
+        android:id="@+id/shineplacetv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cairo_bold"
+        android:layout_marginTop="100dp"
+        android:text="@string/place_shine"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/shine_descr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/shineplacetv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cairo_light"
+        android:text="@string/we_have_tai"
+        android:gravity="center"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_Reliable"
+        app:layout_constraintTop_toBottomOf="@id/shine_descr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_group_palce"
+        />
+
+    <TextView
+        android:id="@+id/getstarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:textColor="@color/color_select"
+        android:fontFamily="@font/cairo_bold"
+        android:text="@string/getstart"
+        android:background="@drawable/start_btn_bg"
+
+        android:gravity="center"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

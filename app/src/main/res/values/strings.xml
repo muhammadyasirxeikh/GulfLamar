@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Gulf Lamar</string>
+    <string name="language" translatable="false">Language</string>
+    <string name="english" translatable="false">English</string>
+    <string name="skip">Skip</string>
+
+    <string name="next">Next</string>
+    <string name="confirm">Confirm</string>
+    <string name="getstart">Get Started</string>
+    <string name="place_shine">Make Your Place Shine</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_place_">Your place is a reflection of you, make it a good one.</string>
+    <string name="arabic_lang" translatable="false">العربية</string>
+    <string name="reliable">Reliable &amp; Affordable</string>
+
+    <string name="we_have_tai">We have tailored plans that will fit\n any budget</string>
+    <string name="lets_start">Let\'s get started!</string>
+    <string name="verification">Verification</string>
+    <string name="verify_phone">Verify phone number</string>
+    <string name="enter_your_mobile">Enter your mobile phone number, we will send it to you!</string>
+    <string name="_454441234633">+454441234633</string>
+    <string name="verified">Verified</string>
+
+    <string name="confirm_phone">Confirm Phone Number</string>
+    <string name="signup_social">Sign up with social accounts</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="register">Register Now</string>
+    <string name="terms">You agree to the following terms and conditions</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="receipt">Receipt</string>
+    <string name="bill">Bill</string>
+    <string name="addcoment">Add a comment</string>
+    <string name="howwas">How was your trip</string>
+    <string name="thanks">Thanks for using our services</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_cleaning">Home Cleaning</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="entername">Enter Name</string>
+    <string name="enteremail">Enter Email</string>
+    <string name="enterphone">Enter Phone number</string>
+    <string name="validemail">Enter Valid Email</string>
+    <string name="selectlanguage">Select Language</string>
+
+    <string name="setyourlocation">Please Set Your Location</string>
+    <string name="findfood">Find food or resturants</string>
+    <string name="allservices">All Services</string>
+    <string name="topservices">Top Services</string>
+
+
+    <string name="home">Home</string>
+    <string name="notify">Notification</string>
+    <string name="wallet">Wallet</string>
+    <string name="profile">Profile</string>
+
+
+    <!-- profile   ?\-->
+    <string name="balance_wallet">Balance in wallet</string>
+    <string name="booking">Booking</string>
+    <string name="invite">Invite Friends</string>
+    <string name="general_settings">General Settings</string>
+    <string name="account_setting">Account Settings</string>
+    <string name="personal_detail">Personal Details</string>
+    <string name="support">The Support</string>
+    <string name="privacy">Privacy policy</string>
+    <string name="info_aboutus">Information About us</string>
+    <string name="terms_and_condition">Terms And Conditions</string>
+    <string name="comments">Comments</string>
+    <string name="reach_us">Reach us</string>
+    <string name="mywallet">My Wallet</string>
+    <string name="logout">Logout</string>
+    <string name="payment">Payment</string>
+
+    <!--plan screen-->
+    <string name="selected_frequency">Selected Frequency</string>
+    <string name="weekly">Weekly</string>
+    <string name="bi_weekly">Bi Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="selected_extra">Selected Extras</string>
+    <string name="confirmfor">Confirm Booking SAR 100.00</string>
+    <string name="selected_cleaning">Selected Cleaning</string>
+    <string name="cleaning_services">CLeaning Services</string>
+    <string name="choose_quantity">Choose or enter the quantity</string>
+    <string name="add_quantity">Add Quantity</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

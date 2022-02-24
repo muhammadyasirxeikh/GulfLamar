@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.fragment.home.Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome_tv"
+            android:text="Welcome Salman asif"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/cairo_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setyourlocation"
+            android:id="@+id/set_location"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cairo_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome_tv" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view_1"
+            app:layout_constraintTop_toBottomOf="@id/set_location"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/dark_gray"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_et"
+            style="@style/edittextbackground"
+
+            android:layout_marginStart="10dp"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@id/view_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/filter_view"
+            android:hint="@string/findfood"
+            android:drawableEnd="@drawable/ic_search_vector"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/filter_view"
+            app:layout_constraintTop_toTopOf="@id/search_et"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/search_et"
+
+            android:src="@drawable/ic_filter"
+            android:padding="10dp"
+
+            />
+
+        <com.smarteist.autoimageslider.SliderView
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/invoice_bg"
+            android:layout_centerInParent="true"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="1.5dp"
+            app:sliderIndicatorSelectedColor="@color/white"
+            app:sliderIndicatorUnselectedColor="@color/dark_gray"
+            app:sliderScrollTimeInSec="1"
+            android:id="@+id/image_slider"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_et"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/allservices_tv"
+            android:text="@string/allservices"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@id/image_slider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/color_unselect"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/view_2"
+            app:layout_constraintTop_toBottomOf="@id/allservices_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/color_unselect"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_2"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/servicesList"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topServices_tv"
+            android:text="@string/topservices"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@id/servicesList"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/color_unselect"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/view_3"
+            app:layout_constraintTop_toBottomOf="@id/topServices_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/color_unselect"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_3"
+            android:layout_marginTop="8dp"
+            android:id="@+id/TopServicesList"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".controller.fragment.editprofile.EditProfile">
+
+    <ScrollView
+        android:id="@+id/scrollViewEP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="?attr/actionBarSize"
+
+
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="117dp"
+                android:layout_height="117dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:civ_border_color="@color/fvrt_sir_list_bg"
+                app:civ_border_width="2dp"
+                android:src="@drawable/user"
+                android:layout_marginTop="20dp"
+                android:id="@+id/user_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/user_image"
+                app:layout_constraintEnd_toEndOf="@id/user_image"
+                app:layout_constraintTop_toBottomOf="@id/user_image"
+                android:text="Edit the picture"
+                android:fontFamily="@font/cairo_regular"
+                android:textSize="12sp"
+                android:textColor="@color/blue"
+                android:drawableEnd="@drawable/ic_edit_blue"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:id="@+id/edit_user_image"/>
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="24dp"
+                android:fontFamily="@font/cairo_regular"
+                android:paddingBottom="20dp"
+                android:singleLine="true"
+                android:text="Ahmed Drwesh"
+                android:textAlignment="viewStart"
+                android:textColorHint="@color/color_unselect"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_image" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_name"
+                android:drawableStart="@drawable/ic_mail"
+                android:text="ahmeddrwesh222@gmail.com"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:paddingBottom="20dp"
+                android:drawablePadding="24dp"
+                android:textColorHint="@color/color_unselect"
+                android:fontFamily="@font/cairo_regular"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:id="@+id/user_email"/>
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ccp_textSize="16sp"
+                app:ccp_clickable="true"
+                android:fontFamily="@font/cairo_regular"
+                app:ccp_autoFormatNumber="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_email" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="3084706656"
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/cairo_regular"
+                app:layout_constraintBottom_toBottomOf="@id/ccp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ccp"
+                app:layout_constraintTop_toBottomOf="@id/user_email" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/languagelayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phone_number">
+
+                <Spinner
+                    android:id="@+id/languageSpinner"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/globe"
+                    android:paddingStart="15dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/globe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+
+
+                    android:src="@drawable/ic_globe" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/update_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+               app:layout_constraintTop_toBottomOf="@id/languagelayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.skydoves.elasticviews.ElasticButton
+                    android:id="@+id/confirmbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm"
+                    app:button_cornerRadius="8dp"
+                    android:gravity="center"
+                    app:button_duration="250"
+                    android:background="@color/green"
+                    app:button_scale="0.87"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/cairo_regular"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <string name="app_name">لمار الخليجية| Change App Language</string>
+        <string name="skip">يتخطى</string>
+        <string name="next">التالي</string>
+        <string name="reliable">موثوقة وبأسعار معقولة</string>
+        <string name="we_have_tai">لقد صممنا خططًا تتناسب مع أي ميزانية</string>
+        <string name="getstart">البدء</string>
+        <string name="place_shine">اجعل مكانك يلمع</string>
+        <string name="your_place_">مكانك هو انعكاس لك ، اجعله مكانًا جيدًا</string>
+    <string name="phone_number">رقم التليفون</string>
+    <string name="lets_start">هيا بنا نبدأ!</string>
+    <string name="verification">تحقق</string>
+    <string name="verify_phone">تحقق من رقم الهاتف</string>
+    <string name="enter_your_mobile">أدخل رقم هاتفك المحمول وسنرسله لك!</string>
+    <string name="_454441234633">+454441234633</string>
+    <string name="confirm">يتأكد</string>
+    <string name="verified">تم التحقق</string>
+    <string name="confirm_phone">تأكيد رقم الهاتف</string>
+    <string name="signup_social">سجل مع حسابات التواصل الاجتماعي</string>
+    <string name="name">اسم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="register">سجل الان</string>
+    <string name="terms">أنت توافق على الشروط والأحكام التالية</string>
+    <string name="receipt">إيصال</string>
+    <string name="thanks">شكرا لاستخدام خدماتنا</string>
+    <string name="bill">فاتورة</string>
+    <string name="howwas">كيف كانت رحلتك</string>
+    <string name="addcoment">اضف تعليق</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="entername">أدخل الاسم</string>
+    <string name="enteremail">أدخل البريد الإلكتروني</string>
+    <string name="enterphone">أدخل رقم الهاتف</string>
+    <string name="validemail">أدخل بريد إلكتروني صالح</string>
+    <string name="selectlanguage">اختار اللغة</string>
+
+
+    <string name="setyourlocation">يرجى تحديد موقعك</string>
+    <string name="findfood">ابحث عن طعام أو مطاعم</string>
+    <string name="allservices">جميع الخدمات</string>
+    <string name="topservices">أعلى الخدمات</string>
+
+
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="notify">تنبيه</string>
+    <string name="wallet">محفظة نقود</string>
+    <string name="profile">الملف الشخصي</string>
+
+    <string name="balance_wallet">رصيد في المحفظة</string>
+    <string name="booking">الحجز</string>
+    <string name="invite">ادعو أصدقاء</string>
+    <string name="general_settings">الاعدادات العامة</string>
+    <string name="account_setting">إعدادت الحساب</string>
+    <string name="personal_detail">تفاصيل شخصية</string>
+    <string name="support">الدعم</string>
+    <string name="privacy">سياسة خاصة</string>
+    <string name="info_aboutus">معلومات عنا</string>
+    <string name="terms_and_condition">الأحكام والشروط</string>
+    <string name="comments">تعليقات</string>
+    <string name="reach_us">تصل إلينا</string>
+    <string name="mywallet">محفظتى</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="payment">دفع</string>
+
+
+
+    <string name="selected_frequency">التردد المحدد</string>
+    <string name="weekly">أسبوعي</string>
+    <string name="bi_weekly">نصف أسبوعي</string>
+    <string name="monthly">شهريا</string>
+    <string name="selected_extra">إضافات مختارة</string>
+    <string name="confirmfor">تأكيد الحجز 100.00 ريال سعودي</string>
+    <string name="selected_cleaning">التنظيف المختار</string>
+    <string name="cleaning_services">خدمات التنظيف</string>
+    <string name="choose_quantity">اختر أو أدخل الكمية</string>
+    <string name="add_quantity">أضف الكمية</string>
+    <string name="cancel">إلغاء</string>
+
+</resources>

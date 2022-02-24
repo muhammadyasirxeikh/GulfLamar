@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#F7F7F7"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="9dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:text="Pending"
+            android:gravity="center"
+            android:fontFamily="@font/cairo_regular"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/booking_status_tag"
+            android:id="@+id/booking_status"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/booking_status"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Booking"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/cairo_bold"
+                android:id="@+id/booking"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/booking"
+                android:text="#544783345"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/cairo_bold"
+                android:id="@+id/booking_token"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/booking_token"
+                android:id="@+id/booking_items_details_rv"
+                android:scrollbars="none"
+
+                />
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/cancel_booking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outline_back"
+                android:padding="14dp"
+                android:gravity="center"
+                android:fontFamily="@font/cairo_regular"
+                android:textSize="14sp"
+                app:button_duration="250"
+                app:button_scale="0.94"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blue"
+                app:layout_constraintStart_toStartOf="@id/booking_items_details_rv"
+                app:layout_constraintEnd_toStartOf="@id/reschedule_booking"
+                app:layout_constraintTop_toBottomOf="@id/booking_items_details_rv"
+                android:text="Cancel Booking"/>
+
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/reschedule_booking"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cancel_booking"
+                app:layout_constraintTop_toBottomOf="@id/booking_items_details_rv"
+                android:text="Reschedule"
+                app:button_duration="250"
+                app:button_scale="0.94"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/outline_back"
+                android:padding="14dp"
+                android:gravity="center"
+                android:fontFamily="@font/cairo_regular"
+                android:textSize="14sp"
+                android:textColor="@color/blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/cancel_booking"
+                app:layout_constraintTop_toBottomOf="@id/cancel_booking"
+                android:text="(Saturday) 2020 Dec 26"
+                android:layout_marginTop="16dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#404040"
+                android:fontFamily="@font/cairo_regular"
+                android:id="@+id/booking_date"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/reschedule_booking"
+                app:layout_constraintTop_toBottomOf="@id/reschedule_booking"
+                android:text="Time 11:58"
+                android:layout_marginTop="16dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#404040"
+                android:fontFamily="@font/cairo_regular"
+                android:id="@+id/booking_time"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
